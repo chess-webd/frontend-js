@@ -1,0 +1,40 @@
+.about__chess {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding: 2.563rem 0 0 0;
+}
+
+.preceding__line {
+  margin: 0.2rem 0.688rem 0 0;
+}
+
+.about__heading {
+  display: flex;
+}
+
+.about__description {
+  padding-bottom: 3.125rem;
+}
+
+.about__heading > h1 {
+  font-family: Saira Condensed;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 31px;
+  line-height: 49px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.description {
+  margin-top: 1rem;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+
+  color: #aaaaaa;
+}
