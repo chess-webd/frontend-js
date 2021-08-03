@@ -1,0 +1,59 @@
+.rectangle{
+    position: absolute;
+    width: 193px;
+    height: 212px;
+    /* left: 80px;
+    top: 495px; */
+    
+    background: #FFFFFF;
+    box-shadow: inset -12px -11px 40px -12px rgba(0, 0, 0, 0.9), inset 12px 11px 40px -12px rgba(0, 0, 0, 0.9);
+    border-radius: 22px;
+}
+
+.ellipse{
+    position: absolute;
+width: 100px;
+height: 100px;
+/* left: 124px;
+top: 505px; */
+margin-left:25%;
+margin-top:5%;
+border-radius:50px;
+background: #93C4BB;
+}
+
+.namecontainer{
+    position: absolute;
+width: 149px;
+height: 18px;
+/* left: 124px;
+top: 620px; */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.06em;
+margin-top: 64%;
+margin-left: 12%;
+color: #000000;
+}
+
+.socialiconcontainer{
+    position: absolute;
+width: 143px;
+height: 46px;
+/* left: 312px;
+top: 653px; */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.06em;
+margin-top: 75%;
+margin-left: 12%;
+color: #000000;
+}
