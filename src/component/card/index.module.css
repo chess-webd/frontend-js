@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+.card {
+  width: 200px;
+  height: 250px;
+  background: var(--gray-light);
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: var(--avatar-size);
+  margin: 10px;
+}
+
+.namecontainer {
+  font-family: 'Noto Serif', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.11em;
+  color: var(--gray1);
+  margin: 10px;
+}
+
+.socialIconGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: auto;
+  margin: 10px;
+}
+
+.socialiconcontainer {
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.vector {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: var(--gray2);
+}
