@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+.container {
+    background-color: rgba(48, 51, 65, 1);
+}
+
+.heading {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+.container_flex {
+    background-color: rgba(76, 78, 91, 1);
+    padding-bottom: 30px;
+}
+
+.flex_box {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 20px;
+}
+
+@media (max-width: 800px) {
+    .flex_box {
+        flex-direction: column;
+    }
+}
+
+.flex_box>div {
+    margin-left: 10px;
+}
+
+.dept_1 {
+    margin-top: 2rem;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+}
+
+.dept_2 {
+    text-align: left;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
