@@ -5,20 +5,20 @@
   padding: 2.563rem 0 0 0;
 }
 
-.preceding_line {
+.preceding__line {
   margin: 0.2rem 0.688rem 0 0;
 }
 
-.about_heading {
+.about__heading {
   display: flex;
 }
 
-.about_description {
+.about__description {
   padding-bottom: 3.125rem;
 }
 
-.about_heading > h1 {
-  font-family: 'Saira Condensed';
+.about__heading > h1 {
+  font-family: "Saira Condensed";
   font-style: normal;
   font-weight: 800;
   font-size: 31px;

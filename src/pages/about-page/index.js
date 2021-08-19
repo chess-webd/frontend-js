@@ -5,10 +5,10 @@ export const About = () => {
   return (
     <div className={styles.about_chess}>
       <div className='container'>
-        <div className='about__description'>
-          <div className='about__heading'>
+        <div className={styles.about__description}>
+          <div className={styles.about__heading}>
             <svg
-              className='preceding__line'
+              className={styles.preceding__line}
               width='4'
               height='35'
               viewBox='0 0 4 35'
@@ -19,7 +19,7 @@ export const About = () => {
             </svg>
             <h1>About ChESS</h1>
           </div>
-          <div className='description'>
+          <div className={styles.description}>
             “ChESS”, The Chemical Engineering Student's Society, is a student's
             organization of the Department of Chemical Engineering , I.I.T.
             Roorkee. It was the year 1999 when this Organization came into
@@ -42,10 +42,10 @@ export const About = () => {
             the support of the majority of students.
           </div>
         </div>
-        <div className='about__description'>
-          <div className='about__heading'>
+        <div className={styles.about__description}>
+          <div className={styles.about__heading}>
             <svg
-              className='preceding__line'
+              className={styles.preceding__line}
               width='4'
               height='35'
               viewBox='0 0 4 35'
@@ -56,7 +56,7 @@ export const About = () => {
             </svg>
             <h1>Activities of ChESS</h1>
           </div>
-          <div className='description'>
+          <div className={styles.description}>
             ChESS performs a large number of activities during the whole year.
             An introduction function for the newly enrolled B.Tech and M.Tech
             1st year students is one of the most popular event organized by
@@ -95,10 +95,10 @@ export const About = () => {
             participation is recorded in these events.
           </div>
         </div>
-        <div className='about__description'>
-          <div className='about__heading'>
+        <div className={styles.about__description}>
+          <div className={styles.about__heading}>
             <svg
-              className='preceding__line'
+              className={styles.preceding__line}
               width='4'
               height='35'
               viewBox='0 0 4 35'
@@ -109,7 +109,7 @@ export const About = () => {
             </svg>
             <h1>Special Activities of ChESS</h1>
           </div>
-          <div className='description'>
+          <div className={styles.description}>
             “ChESS”, The Chemical Engineering Student's Society, is a student's
             organization of the Department of Chemical Engineering , I.I.T.
             Roorkee. It was the year 1999 when this Organization came into
@@ -132,10 +132,10 @@ export const About = () => {
             the support of the majority of students.
           </div>
         </div>
-        <div className='about__description'>
-          <div className='about__heading'>
+        <div className={styles.about__description}>
+          <div className={styles.about__heading}>
             <svg
-              className='preceding__line'
+              className={styles.preceding__line}
               width='4'
               height='35'
               viewBox='0 0 4 35'
@@ -146,7 +146,7 @@ export const About = () => {
             </svg>
             <h1>Activities of ChESS</h1>
           </div>
-          <div className='description'>
+          <div className={styles.description}>
             ChESS performs a large number of activities during the whole year.
             An introduction function for the newly enrolled B.Tech and M.Tech
             1st year students is one of the most popular event organized by
