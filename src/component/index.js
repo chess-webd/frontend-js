@@ -1,3 +1,1 @@
-import Card from './card';
-
-export { Card };
+export { Card } from './card';

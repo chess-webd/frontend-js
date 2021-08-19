@@ -38,4 +38,4 @@ function Card({ image_link, name, fb, insta }) {
   );
 }
 
-export default Card;
+export { Card };

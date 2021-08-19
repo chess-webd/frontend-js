@@ -1,24 +1,24 @@
-.about__chess {
+.about_chess {
   background-color: black;
   color: white;
   min-height: 100vh;
   padding: 2.563rem 0 0 0;
 }
 
-.preceding__line {
+.preceding_line {
   margin: 0.2rem 0.688rem 0 0;
 }
 
-.about__heading {
+.about_heading {
   display: flex;
 }
 
-.about__description {
+.about_description {
   padding-bottom: 3.125rem;
 }
 
-.about__heading > h1 {
-  font-family: Saira Condensed;
+.about_heading > h1 {
+  font-family: 'Saira Condensed';
   font-style: normal;
   font-weight: 800;
   font-size: 31px;
