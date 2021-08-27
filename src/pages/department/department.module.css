@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+.heading {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+.dept_1 {
+    margin-top: 2rem;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+}
+
+.dept_2 {
+    text-align: left;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
