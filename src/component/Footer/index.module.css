@@ -10,53 +10,41 @@
 }
 
 .link{
-position: fixed;
+display:flex;
 width: 127px;
 height: 31px;
-left: calc(48% - 86px/2 + 439px);
-bottom: 100px;
-/* border:1px solid red;- */
+ /* border:1px solid red; */
 }
 
-#home{
- width:86px;
-}
-
-#chemethans{
-
-left: calc(53% - 86px/2 + 439px);
-}
-#team{
- width:86px;
-left: calc(62% - 86px/2 + 439px);
+#home,#team{
+ width:52px;
 }
 #event{
- width:86px;
-    bottom: 50px;
-left: calc(48% - 86px/2 + 439px);
+    width:52px;
 }
-#department{
- 
-    bottom: 50px;
-left: calc(53% - 86px/2 + 439px);
-}
+
 #contactus{
-    bottom: 50px;
-left: calc(62% - 86px/2 + 439px);
+    width:100px;
+}
+
+#department{
+    width:98px;
+}
+#chemethans{
+    width:98px;
 }
 
 .line{
 
 border: 1px solid #FFFFFF;
-transform: rotate(-90deg);
-Width :16.63px;
-margin-top: 10%;
+Width :0.5px;
+background-color: #FFFFFF;
+height: 20px;
+margin-right: 5px;
+margin-top: 5px;
 }
 
 .linktext{
-position: absolute;
-left: 12%;
-top: 1%;
 text-decoration: none;
  font-family: 'Saira Condensed', sans-serif;
 font-style: normal;
@@ -78,16 +66,14 @@ color: #FFFFFF;
     left:20%;
 }
 
-#homeline,#teamline,#eventline{
-  margin-top: 15%;
-}
+
 
 
 .chesslogo{
 position: absolute;
 width: 172.5px;
 height: 69px;
-left: 4%;
+left: 20px;
 bottom: 74px;
 /* border:1px solid red; */
 
@@ -115,11 +101,12 @@ bottom: 74px;
 }
 
 .socialicon{
-    position: absolute;
+    position: fixed;
 width: 8.03px;
 height: 15px;
-left: 4%;
+left: 20px;
 bottom: 42px;
+margin:5%,5%,5%,5%;
 
 /* dark.text.secondary */
 
@@ -134,29 +121,24 @@ bottom: 42px;
 }
 
 #insta{
-left: 6%;
+left: 40px;
    
 }
 #twitter{
-left:8%;
+left:60px;
    
 }
 #yt{
-left: 10%;
+left: 80px;
    
 }
-/* @media only screen and (max-resolution: 300dpi) {
-    .chesslogo{left:5px;}
-    #insta{left:7px;}
-    #twitter{left:9px;}
-    #yt{left:11px;}
-   } */
+
 .footer1{
     position: absolute;
     width: 130px;
     height: 15px;
     left: calc(50% - 125.27px/2 - 0.37px);
-    bottom: 15%;
+    bottom: 9%;
     
     /* dark.text.secondary */
     /* border:1px solid red; */
@@ -169,3 +151,68 @@ left: 10%;
     margin-top: -19%;
     margin-left: 21%;
 }
+
+.linkcontainer{
+display:flex;
+flex-direction:coloumn;
+column-count: 3;
+ position: absolute;
+width: 250px;
+height: 50px;
+right: 20px;
+bottom: 74px;
+ /* border:1px solid red;  */
+}
+
+#linkrowtwo{
+    bottom:32px;
+}
+
+@media only screen and (max-width: 500px) {
+    .chesslogo{left:0px;}
+    #fb{left:5px;}
+    #insta{left:25px;}
+    #twitter{left:45px;}
+    #yt{left:65px;}
+    .linkcontainer{width:170px;
+    right:0px;}
+    #home,#team{
+        width:42px;
+       }
+     #event{
+       width:50px;
+     }  
+       #contactus{
+           width:70px;
+       }
+       
+       #department{
+           width:80px;
+       }
+       #chemethans{
+           width:73px;
+       }
+    .linktext{
+        font-size: 12px;
+    }
+    .ChessText{
+        font-size: 25px;
+    text-shadow: 1px 0 #FFFFFF;
+    }
+    .iitrtext{
+    font-size:10px;
+    margin-top: -11px;
+    margin-left:-11%;
+
+    }
+    .socialicon{
+        bottom:90px;
+    }
+
+    .linkcontainer{
+        bottom:85px;
+    }
+    #linkrowtwo{
+        bottom:55px;
+    }
+   }

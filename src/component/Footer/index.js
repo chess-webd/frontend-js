@@ -8,6 +8,7 @@ function Footer() {
     return (
         <div>
             <div className={styles.footer}>
+               <div className={styles.linkcontainer}>
                 <div className={styles.link} id={styles.home}>
                     <div className={styles.line} id={styles.homeline}></div>
                     <a href="#" className={styles.linktext} id={styles.hometext}>Home</a>
@@ -20,6 +21,8 @@ function Footer() {
                     <div className={styles.line} id={styles.teamline}></div>
                     <a href="#" className={styles.linktext} id={styles.teamtext}>Team</a>
                 </div>
+             </div>
+             <div className={styles.linkcontainer} id={styles.linkrowtwo}>
                 <div className={styles.link} id={styles.event}>
                     <div className={styles.line} id={styles.eventline}></div>
                     <a href="#" className={styles.linktext} id={styles.eventtext}>Event</a>
@@ -32,6 +35,7 @@ function Footer() {
                     <div className={styles.line} id={styles.contactusline}></div>
                     <a href="#" className={styles.linktext} id={styles.contactustext}>Contact-Us</a>
                 </div>
+             </div>
                 <div className={styles.chesslogo}>
                     <div className={styles.ChessText}>
                         ChESS
