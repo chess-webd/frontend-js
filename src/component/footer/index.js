@@ -8,6 +8,7 @@ import {
   faYoutube,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 import Copyright from '@material-ui/icons/Copyright';
 
 function Footer() {
@@ -17,41 +18,55 @@ function Footer() {
         <div className={styles.linkcontainer}>
           <div className={styles.link} id={styles.home}>
             <div className={styles.line} id={styles.homeline}></div>
-            <a href='#' className={styles.linktext} id={styles.hometext}>
+            <Link to='/' className={styles.linktext} id={styles.hometext}>
               Home
-            </a>
+            </Link>
           </div>
           <div className={styles.link} id={styles.chemethans}>
             <div className={styles.line} id={styles.chemethansline}></div>
-            <a href='#' className={styles.linktext} id={styles.chemethanstext}>
+            <Link
+              to='/'
+              href='#'
+              className={styles.linktext}
+              id={styles.chemethanstext}
+            >
               Chem-E-Thans
-            </a>
+            </Link>
           </div>
           <div className={styles.link} id={styles.team}>
             <div className={styles.line} id={styles.teamline}></div>
-            <a href='#' className={styles.linktext} id={styles.teamtext}>
+            <Link
+              to='/team'
+              href='#'
+              className={styles.linktext}
+              id={styles.teamtext}
+            >
               Team
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.linkcontainer} id={styles.linkrowtwo}>
           <div className={styles.link} id={styles.event}>
             <div className={styles.line} id={styles.eventline}></div>
-            <a href='#' className={styles.linktext} id={styles.eventtext}>
+            <Link href='/' className={styles.linktext} id={styles.eventtext}>
               Event
-            </a>
+            </Link>
           </div>
           <div className={styles.link} id={styles.department}>
             <div className={styles.line} id={styles.departmentline}></div>
-            <a href='#' className={styles.linktext} id={styles.departmenttext}>
+            <Link
+              to='/department'
+              className={styles.linktext}
+              id={styles.departmenttext}
+            >
               Department
-            </a>
+            </Link>
           </div>
           <div className={styles.link} id={styles.contactus}>
             <div className={styles.line} id={styles.contactusline}></div>
-            <a href='#' className={styles.linktext} id={styles.contactustext}>
+            <Link to='/' className={styles.linktext} id={styles.contactustext}>
               Contact-Us
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.chesslogo}>

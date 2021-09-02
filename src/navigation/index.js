@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import { Card } from '../component';
+import { Card, Footer } from '../component';
 import { About, Department } from '../pages';
 
 const Navigator = () => (
@@ -29,6 +29,7 @@ const Navigator = () => (
       </Route>
       <Redirect from='*' to='/' />
     </Switch>
+    <Footer />
   </Router>
 );
 export { Navigator };
