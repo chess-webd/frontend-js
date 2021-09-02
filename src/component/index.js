@@ -1,3 +1,3 @@
 import Card from './card';
-import Greet from './department'
+import Greet from './department';
 export { Card };

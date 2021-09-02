@@ -2,12 +2,12 @@
 import './App.css';
 import Card from './component/card';
 import { Department } from './pages';
-import Footer from './component/Footer'
+import Footer from './component/Footer';
 function App() {
   return (
     <div className='App'>
       {/* <Department /> */}
-      <Footer/>
+      <Footer />
     </div>
   );
 }
