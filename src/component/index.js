@@ -1,1 +1,3 @@
-export { Card } from './card';
+import Card from './card';
+import Greet from './department';
+export { Card };

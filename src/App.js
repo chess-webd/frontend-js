@@ -1,9 +1,15 @@
-import React from 'react';
+// import logo from './logo.svg';
 import './App.css';
-import Navigator from './navigation';
-
+import Card from './component/card';
+import { Department } from './pages';
+import Footer from './component/Footer';
 function App() {
-  return <Navigator />;
+  return (
+    <div className='App'>
+      {/* <Department /> */}
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
