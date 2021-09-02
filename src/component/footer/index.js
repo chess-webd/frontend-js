@@ -9,6 +9,7 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import Copyright from '@material-ui/icons/Copyright';
+
 function Footer() {
   return (
     <div>
@@ -117,4 +118,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export { Footer };
