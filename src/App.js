@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
-import { About } from './pages';
 import { Footer } from './component';
+import { Navigator } from './navigation';
 function App() {
   return (
     <div className='App'>
-      <About />
+      <Navigator />
       <Footer />
     </div>
   );

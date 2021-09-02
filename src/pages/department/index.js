@@ -49,4 +49,4 @@ const Department = () => {
   );
 };
 
-export default Department;
+export { Department };
