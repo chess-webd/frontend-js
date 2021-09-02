@@ -1,162 +1,215 @@
-.footer{
-    width: 100%;
-    height:175px;
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    background: #232323;
-    text-align: center;
-
+.footer {
+  width: 100%;
+  height: 175px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #232323;
+  text-align: center;
 }
 
-.link{
-position: fixed;
-width: 127px;
-height: 31px;
-left: calc(48% - 86px/2 + 439px);
-bottom: 100px;
-/* border:1px solid red;- */
+.link {
+  display: flex;
+  width: 127px;
+  height: 31px;
+  /* border:1px solid red; */
 }
 
-#home{
- width:86px;
+#home,
+#team {
+  width: 52px;
+}
+#event {
+  width: 52px;
 }
 
-#chemethans{
-
-left: calc(53% - 86px/2 + 439px);
-}
-#team{
- width:86px;
-left: calc(62% - 86px/2 + 439px);
-}
-#event{
- width:86px;
-    bottom: 50px;
-left: calc(48% - 86px/2 + 439px);
-}
-#department{
- 
-    bottom: 50px;
-left: calc(53% - 86px/2 + 439px);
-}
-#contactus{
-    bottom: 50px;
-left: calc(62% - 86px/2 + 439px);
+#contactus {
+  width: 100px;
 }
 
-.line{
-
-border: 1px solid #FFFFFF;
-transform: rotate(-90deg);
-Width :16.63px;
-margin-top: 10%;
+#department {
+  width: 98px;
+}
+#chemethans {
+  width: 98px;
 }
 
-.linktext{
-position: absolute;
-left: 12%;
-
-top: 1%;
-text-decoration: none;
-
- font-family: 'Saira Condensed', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 27px;
-/* identical to box height */
-
-
-color: #FFFFFF;
-
+.line {
+  border: 1px solid #ffffff;
+  width: 0.5px;
+  background-color: #ffffff;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
-#hometext,#teamtext,#eventtext{
-    left:20%;
+.linktext {
+  text-decoration: none;
+  font-family: 'Saira Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.linktext:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-#homeline,#teamline,#eventline{
-  margin-top: 15%;
+#hometext,
+#teamtext,
+#eventtext {
+  left: 20%;
 }
 
-
-.chesslogo{
-position: absolute;
-width: 172.5px;
-height: 69px;
-left: calc(44% - 172.5px/2 - 480.75px);
-bottom: 74px;
-/* border:1px solid red; */
-
+.chesslogo {
+  position: absolute;
+  width: 172.5px;
+  height: 69px;
+  left: 20px;
+  bottom: 74px;
+  /* border:1px solid red; */
+}
+.socialIconMenu {
+  margin-left: 20px;
 }
 
-.ChessText{
-    margin-top: 2%;
-    margin-left: -47%;
-    font-size: 40px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bolder;
-    text-shadow: 3px 0 #FFFFFF;
-    color:#FFFFFF
-
-
+.ChessText {
+  margin-top: 2%;
+  margin-left: -47%;
+  font-size: 40px;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: bolder;
+  text-shadow: 3px 0 #ffffff;
+  color: #ffffff;
 }
-.iitrtext{
-    margin-top: -19px;
-    font-size: 18px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: 500;
-    color: #FFFFFF;
+.iitrtext {
+  margin-top: -19px;
+  font-size: 18px;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
 }
 
-.socialicon{
-    position: absolute;
-width: 8.03px;
-height: 15px;
-left: calc(44% - 8.03px/2 - 562.98px);
-bottom: 42px;
+.socialicon {
+  position: fixed;
+  width: 8.03px;
+  height: 15px;
+  left: 20px;
+  bottom: 42px;
+  margin: 5%, 5%, 5%, 5%;
 
-/* dark.text.secondary */
-
-
+  /* dark.text.secondary */
 }
 
-.vector{
-    width: 100%;
+.vector {
+  width: 100%;
   height: 100%;
   font-size: 20px;
   color: gray;
 }
 
-#insta{
-left: calc(46% - 8.03px/2 - 562.98px);
-   
+#insta {
+  left: 40px;
 }
-#twitter{
-left: calc(48% - 8.03px/2 - 562.98px);
-   
+#twitter {
+  left: 60px;
 }
-#yt{
-left: calc(50% - 8.03px/2 - 562.98px);
-   
+#yt {
+  left: 80px;
 }
 
-.footer1{
-    position: absolute;
-    width: 130px;
-    height: 15px;
-    left: calc(50% - 125.27px/2 - 0.37px);
-    bottom: 11px;
-    
-    /* dark.text.secondary */
-    /* border:1px solid red; */
-    /* background: #4F4F4F;  */
-    color: gray;
-    text-align: initial;
+.footer1 {
+  position: absolute;
+  left: calc(50% - 125.27px / 2 - 0.37px);
+  bottom: 9%;
+
+  /* dark.text.secondary */
+  /* border:1px solid red; */
+  /* background: #4F4F4F;  */
+  color: gray;
+  text-align: initial;
 }
 
-.footer1text{
-    margin-top: -21%;
-    margin-left: 21%;
+.footer1text {
+}
+
+.linkcontainer {
+  display: flex;
+  flex-direction: coloumn;
+  column-count: 3;
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  right: 20px;
+  bottom: 74px;
+  /* border:1px solid red;  */
+}
+
+#linkrowtwo {
+  bottom: 32px;
+}
+
+@media only screen and (max-width: 500px) {
+  .chesslogo {
+    left: 0px;
+  }
+  #fb {
+    left: 5px;
+  }
+  #insta {
+    left: 25px;
+  }
+  #twitter {
+    left: 45px;
+  }
+  #yt {
+    left: 65px;
+  }
+  .linkcontainer {
+    width: 170px;
+    right: 0px;
+  }
+  #home,
+  #team {
+    width: 42px;
+  }
+  #event {
+    width: 50px;
+  }
+  #contactus {
+    width: 70px;
+  }
+
+  #department {
+    width: 80px;
+  }
+  #chemethans {
+    width: 73px;
+  }
+  .linktext {
+    font-size: 12px;
+  }
+  .ChessText {
+    font-size: 25px;
+    text-shadow: 1px 0 #ffffff;
+  }
+  .iitrtext {
+    font-size: 10px;
+    margin-top: -11px;
+    margin-left: -11%;
+  }
+  .socialicon {
+    bottom: 90px;
+  }
+
+  .linkcontainer {
+    bottom: 85px;
+  }
+  #linkrowtwo {
+    bottom: 55px;
+  }
 }
