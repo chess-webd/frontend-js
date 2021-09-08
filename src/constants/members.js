@@ -1,4 +1,4 @@
-import { Images } from "./images";
+import { Images } from './images';
 
 const Designation = {
   FACULTY_ADVISOR: 'Faculty-Advisor',
@@ -19,8 +19,7 @@ const Members = [
   },
 ];
 
-const MemberSection = {
-};
+const MemberSection = {};
 Members.map((member) => {
   if (
     MemberSection[member.designation] &&
