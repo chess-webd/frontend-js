@@ -1,8 +1,7 @@
 import React from 'react';
 import { Card } from '../../component';
 import styles from './index.module.css';
-import { MemberSection } from '../../constants/members';
-
+import { MemberSection, Designation } from '../../constants/members';
 
 const Title = ({ name }) => (
   <div className={styles.titleRoot}>
@@ -15,13 +14,21 @@ const Teams = () => {
   console.log(MemberSection);
   return (
     <div className={styles.container}>
-      {Object.keys(MemberSection).map((key) => (
-        <div key={key}>
+      {Object.values(Designation).map((key) => (
+        <div key={key} className={styles.sectionRoot}>
           <Title name={key} />
           <div className={styles.cardSectionRoot}>
-            {MemberSection[key].map((item) => (
-              <Card  key={item.name} name={item.name} fb={item.fb} insta={item.insta} image_link={item.img}/>
-            ))}
+            {MemberSection[key] &&
+              MemberSection[key].map((item) => (
+                <div key={item.name} className={styles.card}>
+                  <Card
+                    name={item.name}
+                    fb={item.fb}
+                    insta={item.insta}
+                    image_link={item.img}
+                  />
+                </div>
+              ))}
           </div>
         </div>
       ))}
