@@ -53,8 +53,9 @@
   color: #ffffff;
 }
 .linktext:hover {
+  color: #ff5ea2;
   text-decoration: none;
-  color: #ffffff;
+  transition: 00.5s;
 }
 
 #hometext,

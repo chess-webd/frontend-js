@@ -5,6 +5,12 @@
   --gray1: #767676;
   --gray2: #c0c0c0;
   --avatar-size: 90px;
+  --header-height: 70px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -18,6 +24,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 code {

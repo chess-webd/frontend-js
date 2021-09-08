@@ -30,7 +30,7 @@ function Footer() {
               className={styles.linktext}
               id={styles.chemethanstext}
             >
-              Chem-E-Thans
+              Chem-E-Thons
             </Link>
           </div>
           <div className={styles.link} id={styles.team}>
