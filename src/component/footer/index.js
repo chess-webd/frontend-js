@@ -24,23 +24,13 @@ function Footer() {
           </div>
           <div className={styles.link} id={styles.chemethans}>
             <div className={styles.line} id={styles.chemethansline}></div>
-            <Link
-              to='/'
-              href='#'
-              className={styles.linktext}
-              id={styles.chemethanstext}
-            >
+            <Link to='/' className={styles.linktext} id={styles.chemethanstext}>
               Chem-E-Thons
             </Link>
           </div>
           <div className={styles.link} id={styles.team}>
             <div className={styles.line} id={styles.teamline}></div>
-            <Link
-              to='/team'
-              href='#'
-              className={styles.linktext}
-              id={styles.teamtext}
-            >
+            <Link to='/team' className={styles.linktext} id={styles.teamtext}>
               Team
             </Link>
           </div>
@@ -48,7 +38,7 @@ function Footer() {
         <div className={styles.linkcontainer} id={styles.linkrowtwo}>
           <div className={styles.link} id={styles.event}>
             <div className={styles.line} id={styles.eventline}></div>
-            <Link href='/' className={styles.linktext} id={styles.eventtext}>
+            <Link to='/' className={styles.linktext} id={styles.eventtext}>
               Event
             </Link>
           </div>
@@ -82,7 +72,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faFacebookF}
-              classNameName={styles.vector}
+              className={styles.vector}
               style={{ color: 'gray' }}
             ></FontAwesomeIcon>
           </a>
@@ -94,7 +84,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              classNameName={styles.vector}
+              className={styles.vector}
               style={{ color: 'gray' }}
             ></FontAwesomeIcon>
           </a>
@@ -106,7 +96,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faTwitter}
-              classNameName={styles.vector}
+              className={styles.vector}
               style={{ color: 'gray' }}
             ></FontAwesomeIcon>
           </a>
@@ -118,7 +108,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faYoutube}
-              classNameName={styles.vector}
+              className={styles.vector}
               style={{ color: 'gray' }}
             ></FontAwesomeIcon>
           </a>

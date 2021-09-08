@@ -17,8 +17,9 @@ const Header = () => {
       setMenuOpen(false);
     }
   }, [matches]);
+
   const toggle = () => {
-    setMenuOpen(!isMenuOpen);
+    if (!matches) setMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -33,19 +34,35 @@ const Header = () => {
           </div>
           <ul className={isMenuOpen ? styles.menuOpen : styles.menuClose}>
             <li>
-              <Link to='/' className={styles.linktext} id={styles.hometext}>
+              <Link
+                to='/'
+                onClick={(e) => {
+                  toggle();
+                }}
+                className={styles.linktext}
+                id={styles.hometext}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href='/' className={styles.linktext} id={styles.eventtext}>
+              <Link
+                to='/'
+                onClick={(e) => {
+                  toggle();
+                }}
+                className={styles.linktext}
+                id={styles.eventtext}
+              >
                 Event
               </Link>
             </li>
             <li>
               <Link
                 to='/'
-                href='#'
+                onClick={(e) => {
+                  toggle();
+                }}
                 className={styles.linktext}
                 id={styles.chemethanstext}
               >
@@ -55,6 +72,9 @@ const Header = () => {
             <li>
               <Link
                 to='/department'
+                onClick={(e) => {
+                  toggle();
+                }}
                 className={styles.linktext}
                 id={styles.departmenttext}
               >
@@ -64,7 +84,9 @@ const Header = () => {
             <li>
               <Link
                 to='/team'
-                href='#'
+                onClick={(e) => {
+                  toggle();
+                }}
                 className={styles.linktext}
                 id={styles.teamtext}
               >
@@ -74,6 +96,9 @@ const Header = () => {
             <li>
               <Link
                 to='/'
+                onClick={(e) => {
+                  toggle();
+                }}
                 className={styles.linktext}
                 id={styles.contactustext}
               >

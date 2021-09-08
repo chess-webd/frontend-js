@@ -6,6 +6,7 @@
   --gray2: #c0c0c0;
   --avatar-size: 90px;
   --header-height: 70px;
+  --footer-height: 175px;
 }
 
 * {
@@ -15,7 +16,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   overflow-x: hidden;
   background-color: var(--primary);
   margin: 0;
