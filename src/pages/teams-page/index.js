@@ -3,6 +3,7 @@ import { Card } from '../../component';
 import styles from './index.module.css';
 import { MemberSection } from '../../constants/members';
 
+
 const Title = ({ name }) => (
   <div className={styles.titleRoot}>
     <div className={styles.titleLine} />
@@ -19,7 +20,7 @@ const Teams = () => {
           <Title name={key} />
           <div className={styles.cardSectionRoot}>
             {MemberSection[key].map((item) => (
-              <Card name={item.name} key={item.name} />
+              <Card  key={item.name} name={item.name} fb={item.fb} insta={item.insta} image_link={item.img}/>
             ))}
           </div>
         </div>
