@@ -5,7 +5,9 @@ import menu from '../../assests/images/menu.png';
 import { useState } from 'react';
 
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+// const Link = ({ props, children }) => <NavLink {...props}>{children}</NavLink>;
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(true);
@@ -34,8 +36,10 @@ const Header = () => {
           </div>
           <ul className={isMenuOpen ? styles.menuOpen : styles.menuClose}>
             <li>
-              <Link
+              <NavLink
+                activeClassName={styles.activeLinkText}
                 to='/'
+                exact
                 onClick={(e) => {
                   toggle();
                 }}
@@ -43,11 +47,13 @@ const Header = () => {
                 id={styles.hometext}
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to='/'
+              <NavLink
+                exact
+                activeClassName={styles.activeLinkText}
+                to='/event'
                 onClick={(e) => {
                   toggle();
                 }}
@@ -55,11 +61,13 @@ const Header = () => {
                 id={styles.eventtext}
               >
                 Event
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to='/'
+              <NavLink
+                exact
+                activeClassName={styles.activeLinkText}
+                to='/chem-e-thons'
                 onClick={(e) => {
                   toggle();
                 }}
@@ -67,11 +75,13 @@ const Header = () => {
                 id={styles.chemethanstext}
               >
                 Chem-E-Thons
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
+                exact
                 to='/department'
+                activeClassName={styles.activeLinkText}
                 onClick={(e) => {
                   toggle();
                 }}
@@ -79,10 +89,12 @@ const Header = () => {
                 id={styles.departmenttext}
               >
                 Department
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
+                exact
+                activeClassName={styles.activeLinkText}
                 to='/team'
                 onClick={(e) => {
                   toggle();
@@ -91,11 +103,13 @@ const Header = () => {
                 id={styles.teamtext}
               >
                 Team
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to='/'
+              <NavLink
+                exact
+                activeClassName={styles.activeLinkText}
+                to='/contact-us'
                 onClick={(e) => {
                   toggle();
                 }}
@@ -103,7 +117,7 @@ const Header = () => {
                 id={styles.contactustext}
               >
                 Contact-Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

@@ -75,6 +75,10 @@ nav ul li {
 
   font-family: 'Saira Condensed';
 }
+.activeLinkText {
+  border-bottom: 1px solid #fff;
+  /* color: #ff5ea2; */
+}
 nav ul li a:hover {
   color: #ff5ea2;
   text-decoration: none;
