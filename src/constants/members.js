@@ -90,7 +90,7 @@ const Members = [
     insta: 'https://www.instagram.com/_prince._.yadav_/',
   },
   {
-    designation: Designation.ALUMINI,
+    designation: [Designation.ALUMINI],
     img: Images.ARYAMAN_BEHERA,
     name: 'Aryaman Behera',
     fb: 'https://www.facebook.com/aryaman.behera',
