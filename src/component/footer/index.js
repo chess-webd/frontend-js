@@ -1,5 +1,4 @@
 import React from 'react';
-// import  './index.module.css'
 import styles from './index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -10,113 +9,79 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import Copyright from '@material-ui/icons/Copyright';
+import { Images } from '../../constants/images';
+import { ReactComponent as ChessLogo } from '../../assests/svg/chess-logo.svg';
+
+const FooterLink = ({ to, label }) => (
+  <div className={styles.footerLink}>
+    <div className={styles.footerLine} />
+    <Link to={to} className={styles.footerLinkText}>
+      {label}
+    </Link>
+  </div>
+);
+
+const SocialIconLink = ({ href, icon }) => (
+  <span className={styles.socialIcon}>
+    <FontAwesomeIcon
+      href={href}
+      target='_blank'
+      rel='noreferrer'
+      icon={icon}
+      style={{ color: 'gray' }}
+    />
+  </span>
+);
 
 function Footer() {
   return (
     <div>
       <div className={styles.footer}>
-        <div className={styles.linkcontainer}>
-          <div className={styles.link} id={styles.home}>
-            <div className={styles.line} id={styles.homeline}></div>
-            <Link to='/' className={styles.linktext} id={styles.hometext}>
-              Home
-            </Link>
+        <div className={styles.footerBody}>
+          <div className={styles.footerContent}>
+            <div className={styles.logoContainer}>
+              <div className={styles.chessLogo}>
+                <ChessLogo />
+              </div>
+              <div className={styles.socialIconMenu}>
+                <SocialIconLink
+                  icon={faFacebookF}
+                  href='https://facebook.com'
+                />
+                <SocialIconLink
+                  icon={faInstagram}
+                  href='https://www.instagram.com'
+                />
+                <SocialIconLink
+                  icon={faTwitter}
+                  href='https://www.twitter.com'
+                />
+                <SocialIconLink
+                  icon={faYoutube}
+                  href='https://www.youtube.com'
+                />
+              </div>
+            </div>
+            <div className={styles.logoContainer}>
+              <img
+                className={styles.chessLogoPNG}
+                src={Images.CHESS_LOGO_NO_BG}
+                alt='chess-logo'
+              />
+            </div>
           </div>
-          <div className={styles.link} id={styles.chemethans}>
-            <div className={styles.line} id={styles.chemethansline}></div>
-            <Link to='/' className={styles.linktext} id={styles.chemethanstext}>
-              Chem-E-Thons
-            </Link>
-          </div>
-          <div className={styles.link} id={styles.team}>
-            <div className={styles.line} id={styles.teamline}></div>
-            <Link to='/team' className={styles.linktext} id={styles.teamtext}>
-              Team
-            </Link>
-          </div>
-        </div>
-        <div className={styles.linkcontainer} id={styles.linkrowtwo}>
-          <div className={styles.link} id={styles.event}>
-            <div className={styles.line} id={styles.eventline}></div>
-            <Link to='/' className={styles.linktext} id={styles.eventtext}>
-              Event
-            </Link>
-          </div>
-          <div className={styles.link} id={styles.department}>
-            <div className={styles.line} id={styles.departmentline}></div>
-            <Link
-              to='/department'
-              className={styles.linktext}
-              id={styles.departmenttext}
-            >
-              Department
-            </Link>
-          </div>
-          <div className={styles.link} id={styles.contactus}>
-            <div className={styles.line} id={styles.contactusline}></div>
-            <Link to='/' className={styles.linktext} id={styles.contactustext}>
-              Contact-Us
-            </Link>
+          <div className={styles.footerContent}>
+            <FooterLink to='/' label='Home' />
+            <FooterLink to='/' label='Chem-E-Thons' />
+            <FooterLink to='/team' label='Team' />
+            <FooterLink to='/' label='Event' />
+            <FooterLink to='/department' label='Department' />
+            <FooterLink to='/' label='Contact-Us' />
           </div>
         </div>
-        <div className={styles.chesslogo}>
-          <div className={styles.ChessText}>ChESS</div>
-          <div className={styles.iitrtext}>IITR</div>
-        </div>
-        <div className={styles.socialIconMenu}>
-          <a
-            className={styles.socialicon}
-            id={styles.fb}
-            href='https://www.facebook.com'
-            target='_blank'
-          >
-            <FontAwesomeIcon
-              icon={faFacebookF}
-              className={styles.vector}
-              style={{ color: 'gray' }}
-            ></FontAwesomeIcon>
-          </a>
-          <a
-            className={styles.socialicon}
-            id={styles.insta}
-            href='https://www.instagram.com'
-            target='_blank'
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className={styles.vector}
-              style={{ color: 'gray' }}
-            ></FontAwesomeIcon>
-          </a>
-          <a
-            className={styles.socialicon}
-            id={styles.twitter}
-            href='https://www.twitter.com'
-            target='_blank'
-          >
-            <FontAwesomeIcon
-              icon={faTwitter}
-              className={styles.vector}
-              style={{ color: 'gray' }}
-            ></FontAwesomeIcon>
-          </a>
-          <a
-            className={styles.socialicon}
-            id={styles.yt}
-            href='https://www.youtube.com'
-            target='_blank'
-          >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              className={styles.vector}
-              style={{ color: 'gray' }}
-            ></FontAwesomeIcon>
-          </a>
-        </div>
-
-        <div className={styles.footer1}>
-          <Copyright />
-          <span className={styles.footer1text}> 2021 Chess IITR </span>
+        <div className={styles.copyrightRoot}>
+          <Copyright className={styles.copyrightLogo} />
+          <span className={styles.copyrightRootText}> 2021 ChESS IITR </span>
         </div>
       </div>
     </div>

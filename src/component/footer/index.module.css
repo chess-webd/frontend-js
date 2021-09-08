@@ -1,38 +1,60 @@
 .footer {
   width: 100%;
   height: var(--footer-height);
-  position: relative;
   background: #232323;
-  text-align: center;
-}
-
-.link {
   display: flex;
-  width: 127px;
-  height: 31px;
-  /* border:1px solid red; */
+  flex-direction: column;
+  justify-content: center;
 }
 
-#home,
-#team {
-  width: 52px;
+.footerBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-#event {
-  width: 52px;
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 450px;
 }
 
-#contactus {
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chessLogo {
+  margin-left: 30px;
+}
+
+.socialIconMenu {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialIcon {
+  margin-right: 10px;
+}
+
+.chessLogoPNG {
+  width: 100px;
+  height: 100px;
+}
+
+.footerLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
   width: 100px;
 }
 
-#department {
-  width: 98px;
-}
-#chemethans {
-  width: 98px;
-}
-
-.line {
+.footerLine {
   border: 1px solid #ffffff;
   width: 0.5px;
   background-color: #ffffff;
@@ -41,173 +63,47 @@
   margin-top: 5px;
 }
 
-.linktext {
+.footerLinkText {
   text-decoration: none;
   font-family: 'Saira Condensed', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 27px;
-  /* identical to box height */
-
   color: #ffffff;
 }
-.linktext:hover {
+
+.footerLinkText:hover {
   color: #ff5ea2;
   text-decoration: none;
   transition: 00.5s;
 }
 
-#hometext,
-#teamtext,
-#eventtext {
-  left: 20%;
+.copyrightLogo {
+  color: #4f4f4f;
+}
+.copyrightRoot {
 }
 
-.chesslogo {
-  position: absolute;
-  width: 172.5px;
-  height: 69px;
-  left: 20px;
-  bottom: 74px;
-  /* border:1px solid red; */
+.copyrightRootText {
+  color: #4f4f4f;
 }
 
-.ChessText {
-  margin-top: 2%;
-  margin-left: -47%;
-  font-size: 40px;
-  font-family: 'Saira Condensed', sans-serif;
-  font-weight: bolder;
-  text-shadow: 3px 0 #ffffff;
-  color: #ffffff;
-}
-.iitrtext {
-  margin-top: -19px;
-  font-size: 18px;
-  font-family: 'Saira Condensed', sans-serif;
-  font-weight: 500;
-  color: #ffffff;
-}
-.socialIconMenu {
-  margin-left: 20px;
-}
-.socialicon {
-  position: absolute;
-  width: 8.03px;
-  height: 15px;
-  left: 20px;
-  bottom: 42px;
-  margin: 5%, 5%, 5%, 5%;
-
-  /* dark.text.secondary */
-}
-
-.vector {
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  color: gray;
-}
-
-#insta {
-  left: 40px;
-}
-#twitter {
-  left: 60px;
-}
-#yt {
-  left: 80px;
-}
-
-.footer1 {
-  position: absolute;
-  left: calc(50% - 125.27px / 2 - 0.37px);
-  bottom: 9%;
-
-  /* dark.text.secondary */
-  /* border:1px solid red; */
-  /* background: #4F4F4F;  */
-  color: gray;
-  text-align: initial;
-}
-
-.footer1text {
-}
-
-.linkcontainer {
-  display: flex;
-  flex-direction: coloumn;
-  column-count: 3;
-  position: absolute;
-  width: 250px;
-  height: 50px;
-  right: 20px;
-  bottom: 74px;
-  /* border:1px solid red;  */
-}
-
-#linkrowtwo {
-  bottom: 32px;
-}
-
-@media only screen and (max-width: 500px) {
-  .chesslogo {
-    left: 0px;
-  }
-  #fb {
-    left: 5px;
-  }
-  #insta {
-    left: 25px;
-  }
-  #twitter {
-    left: 45px;
-  }
-  #yt {
-    left: 65px;
-  }
-  .linkcontainer {
-    width: 170px;
-    right: 0px;
-  }
-  #home,
-  #team {
-    width: 42px;
-  }
-  #event {
-    width: 50px;
-  }
-  #contactus {
-    width: 70px;
+@media only screen and (max-width: 700px) {
+  .footerBody {
+    flex-direction: column;
   }
 
-  #department {
-    width: 80px;
-  }
-  #chemethans {
-    width: 73px;
-  }
-  .linktext {
-    font-size: 12px;
-  }
-  .ChessText {
-    font-size: 25px;
-    text-shadow: 1px 0 #ffffff;
-  }
-  .iitrtext {
-    font-size: 10px;
-    margin-top: -11px;
-    margin-left: -11%;
-  }
-  .socialicon {
-    bottom: 90px;
+  .footerLinkText {
+    font-size: 13px;
+    line-height: 17px;
   }
 
-  .linkcontainer {
-    bottom: 85px;
+  /* .footerLink {
+    width: 60px;
   }
-  #linkrowtwo {
-    bottom: 55px;
-  }
+
+  .footerContent {
+    width: 180px;
+  } */
 }

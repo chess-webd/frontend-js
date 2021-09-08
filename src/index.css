@@ -6,12 +6,17 @@
   --gray2: #c0c0c0;
   --avatar-size: 90px;
   --header-height: 70px;
-  --footer-height: 175px;
+  --footer-height: 200px;
 }
 
 * {
   margin: 0px;
   padding: 0px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none; /*  Chrome, Safari and Opera */
 }
 
 body {

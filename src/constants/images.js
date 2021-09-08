@@ -17,8 +17,10 @@ import ARYAMAN_BEHERA from '../assests/team-member-photos/self - ARYAMAN BEHERA.
 import SHREYANSH_SAXENA from '../assests/team-member-photos/WhatsApp Image 2021-08-01 at 10.06.23 PM - SHREYANSH SAXENA.jpeg';
 import ABHINAV_AGARWAL from '../assests/team-member-photos/WhatsApp Image 2021-08-13 at 7.31.13 PM - ABHINAV AGARWAL.jpeg';
 import ANURAG_JAISWAL from '../assests/team-member-photos/IMG_20210810_134035 - ANURAG KUMAR JAISWAL.jpg';
+import CHESS_LOGO_NO_BG from '../assests/images/chess-logo-removebg-.png';
 
 const Images = {
+  CHESS_LOGO_NO_BG,
   FACULTY1_ASHWINI_KUMAR,
   ANURAG_JAISWAL,
   SARVESH_OMPRAKASH,
