@@ -1,0 +1,123 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: var(--header-height);
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 100%;
+  /* min-height: 100vh; */
+  /* padding-left: 8%; */
+  /* padding-right: 8%; */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.chesslogo {
+  position: absolute;
+  width: wrap-content;
+  height: wrap-content;
+  left: 20px;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  /* margin-top: 80px; */
+  /* bottom: 74px; */
+  /* border:1px solid red; */
+}
+
+.ChessText {
+  /* margin-top: 10%; */
+  /* margin-left: -47%; */
+  font-size: 40px;
+  font-family: 'Saira Condensed', sans-serif;
+  /* font-weight: bolder; */
+  /* text-shadow: 3px 0 #ffffff; */
+  color: #ffffff;
+}
+.iitrtext {
+  text-align: right;
+  margin-top: -16px;
+  font-size: 12px;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #232323;
+}
+.menu {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.linktext {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #cccad4;
+
+  font-family: 'Saira Condensed';
+}
+.activeLinkText {
+  border-bottom: 1px solid #fff;
+  /* color: #ff5ea2; */
+}
+nav ul li a:hover {
+  color: #ff5ea2;
+  text-decoration: none;
+  transition: 00.5s;
+}
+.menuOpen {
+  display: block;
+}
+.menuClose {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: #000000e0;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .menu {
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .chesslogo {
+    position: absolute;
+    margin-top: -25px;
+  }
+}
