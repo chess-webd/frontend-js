@@ -41,7 +41,7 @@ function Footer() {
           <div className={styles.footerContent}>
             <div className={styles.logoContainer}>
               <div className={styles.chessLogo}>
-                <ChessLogo />
+                <ChessLogo className={styles.chessLogoSVG} />
               </div>
               <div className={styles.socialIconMenu}>
                 <SocialIconLink
